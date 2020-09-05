@@ -18,15 +18,11 @@ public:
 	}
 };
 
-
-
 int main() {
 	A obj;
 	int n, q, size, val1, val2;
-
 	cin >> n;
 	cin >> q;
-
 	vector<vector<int>> A;
 	vector<pair<int, int>> P;
 
@@ -44,9 +40,7 @@ int main() {
 	vector<pair<int, int>> ::iterator it;
 
 	for (it = P.begin(); it != P.end(); it++) {
-		pair<int,int> temp = *it;
-		cout << A[temp.first][temp.second] << endl;
+		cout << A[(*it).first][(*it).second] << endl;
 	}
-
 	return 0;
 }
